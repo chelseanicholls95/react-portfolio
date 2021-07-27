@@ -1,4 +1,4 @@
-# Fitness Tracker ![MIT license](https://img.shields.io/badge/license-MIT-green)
+# Portfolio ![MIT license](https://img.shields.io/badge/license-MIT-green)
 
 ## Description
 

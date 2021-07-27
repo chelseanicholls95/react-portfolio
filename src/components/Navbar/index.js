@@ -10,16 +10,16 @@ const NavbarComponent = () => {
         Logo
       </Navbar.Brand>
       <Nav className="p-1 mx-5">
-        <Nav.Link className="mx-2" href="#home">
+        <Nav.Link className="mx-2 link" href="#home">
           Home
         </Nav.Link>
-        <Nav.Link className="mx-2" href="#about-me">
+        <Nav.Link className="mx-2 link" href="#about-me">
           About Me
         </Nav.Link>
-        <Nav.Link className="mx-2" href="#contact">
+        <Nav.Link className="mx-2 link" href="#contact">
           Contact
         </Nav.Link>
-        <Nav.Link className="mx-2" href="#projects">
+        <Nav.Link className="mx-2 link" href="#projects">
           Projects
         </Nav.Link>
       </Nav>

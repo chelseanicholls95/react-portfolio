@@ -4,3 +4,12 @@
   align-items: center;
   background-color: #0b0d0a;
 }
+
+.link {
+  color: rgba(255, 255, 255, 0.904) !important;
+  font-weight: bold;
+}
+
+.link:hover {
+  color: #78608a !important;
+}

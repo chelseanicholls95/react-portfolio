@@ -1,11 +1,11 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
+import "./Navbar.css";
+
 const NavbarComponent = () => {
   return (
-    <Navbar bg="dark" variant="dark" className="d-flex justify-content-between">
+    <Navbar bg="dark" variant="dark" className="navbar">
       <Navbar.Brand className="p-2 mx-5" href="#home">
         Logo
       </Navbar.Brand>

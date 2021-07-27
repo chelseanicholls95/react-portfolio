@@ -5,7 +5,7 @@ import "./Navbar.css";
 
 const NavbarComponent = () => {
   return (
-    <Navbar bg="light" variant="light" className="navbar">
+    <Navbar className="navbar">
       <Navbar.Brand className="p-2 mx-5" href="#home">
         Logo
       </Navbar.Brand>

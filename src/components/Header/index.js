@@ -4,11 +4,11 @@ import image from "../../assets/images/my-image.jpg";
 const Header = () => {
   return (
     <div className="main-container">
-      <div className="image-container">
-        <img src={image} alt="developer" className="image" />
-      </div>
       <div className="header-container">
-        <h1>Chelsea Nicholls</h1>
+        <h1>
+          I'm <span className="name">Chelsea</span> Nicholls
+        </h1>
+        <div>Full Stack Software Engineer | </div>
       </div>
     </div>
   );

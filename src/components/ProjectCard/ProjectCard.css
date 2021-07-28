@@ -1,0 +1,25 @@
+.card {
+  width: 30rem;
+  margin: 2rem;
+  box-shadow: 0px 0px 20px rgba(172, 59, 78, 1);
+}
+
+.card-body {
+  color: #000;
+  text-align: center;
+}
+
+.button {
+  background: rgb(172, 59, 78);
+  background: linear-gradient(
+    150deg,
+    rgba(172, 59, 78, 1) 0%,
+    rgba(172, 176, 185, 1) 50%,
+    rgba(34, 51, 91, 1) 100%
+  );
+  width: 100%;
+}
+
+.button:hover {
+  font-weight: bold;
+}

@@ -1,10 +1,17 @@
+import { FaGithubSquare, FaLinkedin, FaEnvelope } from "react-icons/fa";
+
+import Icon from "../Icon";
+
 import "./Footer.css";
 
 const Footer = () => {
   return (
     <footer className="footer">
-      Coded by: Chelsea Nicholls. Graduating: August 2021. Available to hire
-      from: August 2021.
+      <div className="icons">
+        <Icon icon={<FaGithubSquare />} />
+        <Icon icon={<FaLinkedin />} />
+        <Icon icon={<FaEnvelope />} />
+      </div>
     </footer>
   );
 };

@@ -12,6 +12,8 @@ import Footer from "./components/Footer";
 import sightsAndSounds from "./assets/images/sights&sounds.png";
 import codeQuiz from "./assets/images/code-quiz.png";
 import weatherDashboard from "./assets/images/weather-dashboard.png";
+import codemon from "./assets/images/codemon.png";
+import dishUp from "./assets/images/dishup.png";
 
 import "./App.css";
 
@@ -51,12 +53,36 @@ const App = () => {
     },
   ];
 
+  const backEndProjects = [
+    {
+      image: codemon,
+      imageLink: "https://fathomless-dusk-01596.herokuapp.com/",
+      title: "Codemon",
+      description:
+        "A full stack tech blog where users can sign up, log in and create posts, comment on others posts and edit and delete their own contributions. Created with HTML, CSS, JavaScript, jQuery, Handlebars, Express, Node.js, Sequelize and Bootstrap.",
+      buttonLink: "https://github.com/chelseanicholls95/mvc-tech-blog",
+    },
+    {
+      image: dishUp,
+      imageLink: "https://blooming-tundra-91244.herokuapp.com/",
+      title: "DishUp",
+      description:
+        "A meal planning app to make your life as simple as possible, whilst enjoying delicious food. DishUp provides users the ability to easily search for food, using a range of possible filters for dietary requirements and intolerances. These meals can be saved to meal plans on the user profile, so they can be easily referred back to in the future. Created with HTML, CSS, JavaScript, jQuery, Handlebars, Express, Node.js, Sequelize and Bootstrap.",
+      buttonLink: "https://github.com/chelseanicholls95/dish-up",
+    },
+  ];
+
   return (
     <div>
       <NavbarComponent onNavItemClick={onNavItemClick} />
       <Header />
       {view === "aboutMe" && <AboutMe />}
-      {view === "projects" && <Projects frontEndProjects={frontEndProjects} />}
+      {view === "projects" && (
+        <Projects
+          frontEndProjects={frontEndProjects}
+          backEndProjects={backEndProjects}
+        />
+      )}
       {view === "contact" && <Contact />}
       <Footer />
     </div>

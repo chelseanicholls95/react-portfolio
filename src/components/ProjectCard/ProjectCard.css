@@ -4,9 +4,19 @@
   box-shadow: 0px 0px 20px rgba(172, 59, 78, 1);
 }
 
+.card-image {
+  height: 17rem;
+}
+
 .card-body {
   color: #000;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.description {
 }
 
 .button {

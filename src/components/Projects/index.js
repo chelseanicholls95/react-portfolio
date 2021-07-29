@@ -5,10 +5,12 @@ import "./Projects.css";
 const Projects = ({ frontEndProjects }) => {
   return (
     <div className="projects-container">
-      <h1>Projects</h1>
-      {frontEndProjects.map((projectInfo) => {
-        return <ProjectCard project={projectInfo} />;
-      })}
+      <h1>Front End Projects</h1>
+      <div className="cards-container">
+        {frontEndProjects.map((projectInfo) => {
+          return <ProjectCard project={projectInfo} />;
+        })}
+      </div>
     </div>
   );
 };

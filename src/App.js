@@ -1,52 +1,66 @@
-import { Component } from "react";
+import { useState } from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import NavbarComponent from "./components/Navbar";
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
-// import Contact from "./components/Contact";
+import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 
+import sightsAndSounds from "./assets/images/sights&sounds.png";
+import codeQuiz from "./assets/images/code-quiz.png";
+import weatherDashboard from "./assets/images/weather-dashboard.png";
+
 import "./App.css";
 
-class App extends Component {
-  constructor(props) {
-    super(props);
+const App = () => {
+  const [view, setView] = useState("home");
 
-    this.state = {
-      view: "home",
-    };
-  }
+  const onNavItemClick = (event) => {
+    const { name } = event.currentTarget;
 
-  onClickHome = () => {
-    this.setState = {
-      view: "home",
-    };
+    setView(name);
   };
 
-  onClickAboutMe = () => {
-    this.setState = {
-      view: "aboutMe",
-    };
-  };
+  const frontEndProjects = [
+    {
+      image: sightsAndSounds,
+      imageLink: "https://chelseanicholls95.github.io/event-planner/",
+      title: "Sights & Sounds",
+      description:
+        "Sights & Sounds allows you to easily find events and venues, based on your selected location. You can then save the ones you are interested in to your wishlist and - Voila! Your weekend plans are already looking a lot more exciting! Created using HTML, CSS, JavaScript and jQuery and gathering information from Foursquare Places API and Ticketmaster API.",
+      buttonLink: "https://github.com/chelseanicholls95/event-planner",
+    },
+    {
+      image: codeQuiz,
+      imageLink: "https://chelseanicholls95.github.io/code_quiz/",
+      title: "Code Quiz",
+      description:
+        "A challenging quiz to test your knowledge of code! Dynamically rendered HTML displays each question after the previous question has been answered. Created with HTML, CSS and JavaScript.",
+      buttonLink: "https://github.com/chelseanicholls95/code_quiz",
+    },
+    {
+      image: weatherDashboard,
+      imageLink: "https://chelseanicholls95.github.io/weather_dashboard/",
+      title: "Weather Dashboard",
+      description:
+        "Check the weather for any city of your choosing using this weather dashboard. Created using HTML, CSS, JavaScript and jQuery as well as the Open Weather API.",
+      buttonLink: "https://github.com/chelseanicholls95/weather_dashboard",
+    },
+  ];
 
-  render() {
-    return (
-      <div>
-        <NavbarComponent
-          onClickHome={this.onClickHome}
-          onClickAboutMe={this.onClickAboutMe}
-        />
-        <Header />
-        {this.state.view === "aboutMe" && <AboutMe />}
-        {/* <Contact /> */}
-        <Projects />
-        <Footer />
-      </div>
-    );
-  }
-}
+  return (
+    <div>
+      <NavbarComponent onNavItemClick={onNavItemClick} />
+      <Header />
+      {view === "aboutMe" && <AboutMe />}
+      {view === "projects" && <Projects frontEndProjects={frontEndProjects} />}
+      {view === "contact" && <Contact />}
+      <Footer />
+    </div>
+  );
+};
 
 export default App;

@@ -1,18 +1,16 @@
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 
-import image from "../../assets/images/placeholder.jpg";
-
 import "./ProjectCard.css";
 
-const ProjectCard = () => {
+const ProjectCard = ({ project }) => {
   return (
     <Card className="card">
-      <Card.Img variant="top" src={image} />
+      <Card.Img variant="top" src={project.image} />
       <Card.Body className="card-body">
-        <Card.Title className="title">Project</Card.Title>
-        <Card.Text className="description">Description of project</Card.Text>
-        <Button className="button">GitHub Repo</Button>
+        <Card.Title className="title">{project.title}</Card.Title>
+        <Card.Text className="description">{project.description}</Card.Text>
+        <Button className="button">{project.buttonLink}</Button>
       </Card.Body>
     </Card>
   );

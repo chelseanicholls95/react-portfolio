@@ -1,11 +1,11 @@
 .card {
-  width: 30rem;
+  width: 20rem;
   margin: 2rem;
   box-shadow: 0px 0px 20px rgba(172, 59, 78, 1);
 }
 
 .card-image {
-  height: 17rem;
+  height: 12rem;
 }
 
 .card-body {
@@ -17,6 +17,7 @@
 }
 
 .description {
+  font-size: 0.8rem;
 }
 
 .button {

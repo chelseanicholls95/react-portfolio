@@ -14,6 +14,7 @@ import codeQuiz from "./assets/images/code-quiz.png";
 import weatherDashboard from "./assets/images/weather-dashboard.png";
 import codemon from "./assets/images/codemon.png";
 import dishUp from "./assets/images/dishup.png";
+import fitnessTracker from "./assets/images/fitness-tracker.png";
 
 import "./App.css";
 
@@ -32,7 +33,7 @@ const App = () => {
       imageLink: "https://chelseanicholls95.github.io/event-planner/",
       title: "Sights & Sounds",
       description:
-        "Sights & Sounds allows you to easily find events and venues, based on your selected location. You can then save the ones you are interested in to your wishlist and - Voila! Your weekend plans are already looking a lot more exciting! Created using HTML, CSS, JavaScript and jQuery and gathering information from Foursquare Places API and Ticketmaster API.",
+        "Sights & Sounds allows you to easily find events and venues, based on your selected location. You can then save the ones you are interested in to your wishlist. Created using HTML, CSS, JavaScript and jQuery and gathering information from Foursquare Places API and Ticketmaster API.",
       buttonLink: "https://github.com/chelseanicholls95/event-planner",
     },
     {
@@ -67,8 +68,16 @@ const App = () => {
       imageLink: "https://blooming-tundra-91244.herokuapp.com/",
       title: "DishUp",
       description:
-        "A meal planning app to make your life as simple as possible, whilst enjoying delicious food. DishUp provides users the ability to easily search for food, using a range of possible filters for dietary requirements and intolerances. These meals can be saved to meal plans on the user profile, so they can be easily referred back to in the future. Created with HTML, CSS, JavaScript, jQuery, Handlebars, Express, Node.js, Sequelize and Bootstrap.",
+        "DishUp provides users the ability to easily search for food, using a range of possible filters for dietary requirements and intolerances. These meals can be saved to meal plans on the user profile. Created with HTML, CSS, JavaScript, jQuery, Handlebars, Express, Node.js, Sequelize and Bootstrap.",
       buttonLink: "https://github.com/chelseanicholls95/dish-up",
+    },
+    {
+      image: fitnessTracker,
+      imageLink: "https://mysterious-chamber-32416.herokuapp.com/",
+      title: "Fitness Tracker",
+      description:
+        "A fitness tracker which allows a user to keep track of their workouts. Users can add new workouts, continue their workout and see charts showing their workouts.",
+      buttonLink: "https://github.com/chelseanicholls95/fitness-tracker",
     },
   ];
 

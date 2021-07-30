@@ -2,6 +2,8 @@
 
 ## Description
 
+A react portfolio displaying a variety of front and back end projects that I have made.
+
 ## Table of Contents
 
 [Description](#description)  
@@ -13,6 +15,10 @@
 [Questions](#questions)
 
 ## Technologies Used
+
+- React
+- HTML5
+- CSS
 
 ## Getting Started
 
@@ -27,9 +33,14 @@ npm run start
 
 ## Link to Deployed Application
 
-View the working application [here]().
+View the working application [here](https://chelseanicholls95.github.io/react-portfolio/).
 
 ## Screenshots
+
+![homepage](src/assets/screenshots/home.png)
+![about-me](src/assets/screenshots/about-me.png)
+![projects](src/assets/screenshots/projects.png)
+![contact](src/assets/screenshots/contact.png)
 
 ## License
 

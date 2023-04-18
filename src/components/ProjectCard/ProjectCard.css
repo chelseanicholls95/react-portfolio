@@ -22,15 +22,12 @@
 
 .button {
   background: rgb(172, 59, 78);
-  background: linear-gradient(
-    150deg,
-    rgba(172, 59, 78, 1) 0%,
-    rgba(172, 176, 185, 1) 50%,
-    rgba(34, 51, 91, 1) 100%
-  );
+  border: rgb(172, 59, 78);
+
   width: 100%;
 }
 
 .button:hover {
   font-weight: bold;
+  background: rgb(172, 59, 78);
 }
